@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fdfbfb,
+        #ebedee
+    );
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#greeting {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 20px;
+}
+
+.card {
+
+    border-radius: 20px;
+    padding: 25px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card:nth-child(1){
+    background:#dff6ff;
+}
+
+.card:nth-child(2){
+    background:#fff4d6;
+}
+
+.card:nth-child(3){
+    background:#e8ffe8;
+}
+
+.card:nth-child(4){
+    background:#ffe6f2;
+}
+
+.card:nth-child(5){
+    background:#ede7ff;
+}
+
+.card:nth-child(6){
+    background:#ffe9d6;
+}
+
+.card:nth-child(7){
+    background:#d6fff8;
+}
+
+input,
+textarea {
+
+    width: 95%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+button {
+
+    background:
+    linear-gradient(
+    45deg,
+    #6c63ff,
+    #8e7dff
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.dark {
+
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .card {
+    background: #333 !important;
+    color: white;
+}
+footer{
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+footer hr{
+    margin-bottom: 15px;
+}
+#newsList a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+#newsList a:hover{
+    color:#6c63ff;
+}
+
+#newsList li{
+    margin-bottom:10px;
+}

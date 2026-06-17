@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VertexOne Smart AI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🚀 VertexOne Smart AI Dashboard</h1>
+        <button onclick="toggleMode()">🌙 Dark Mode</button>
+    </div>
+
+    <h2 id="greeting"></h2>
+
+    <div class="container">
+
+        <!-- Weather -->
+        <div class="card">
+            <h2>🌤 Weather</h2>
+
+            <input type="text" id="city" placeholder="Enter City Name">
+
+            <button onclick="getWeather()">Get Weather</button>
+
+            <div id="weatherResult"></div>
+        </div>
+
+        <!-- News -->
+        <div class="card">
+            <h2>📰 News</h2>
+
+            <button onclick="showNews()">Load News</button>
+
+            <ul id="newsList"></ul>
+        </div>
+
+        <!-- Tasks -->
+        <div class="card">
+            <h2>✅ Tasks</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter Task">
+
+            <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- AI Quote -->
+        <div class="card">
+            <h2>🤖 AI Quote</h2>
+
+            <p id="quote">Click Generate Quote</p>
+
+            <button onclick="generateQuote()">
+                Generate Quote
+            </button>
+        </div>
+
+        <!-- Live Time -->
+        <div class="card">
+            <h2>⏰ Live Time</h2>
+            <p id="clock"></p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="card">
+            <h2>📊 Statistics</h2>
+            <p>Total Tasks: <span id="count">0</span></p>
+        </div>
+
+        <!-- Notes -->
+        <div class="card">
+            <h2>📝 Quick Notes</h2>
+
+            <textarea id="note" rows="4"
+                placeholder="Write your notes here..."></textarea>
+
+            <button onclick="saveNote()">
+                Save Note
+            </button>
+
+            <p id="saved"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+<footer>
+    <hr>
+    <centre><p>
+        🚀 Developed by Team VertexOne | Smart AI Dashboard © 2026
+    </p></centre>
+</footer>
+</body>
+
+</html>
